@@ -1,0 +1,59 @@
+:root {
+  --body-background: hsl(212, 45%, 89%);
+  --container-background: hsl(0, 0%, 100%);
+  --h1-color: hsl(218, 44%, 22%);
+  --p-color: hsl(220, 15%, 55%);
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-background);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will make sure that element is horizontally in the middle of the page*/
+}
+
+.container-white {
+  background-color: var(--container-background);
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 280px; /* it wont allow to be spread all over from left to the right side of the page*/
+  text-align: center; /* Center the text within the container */
+}
+
+.container-white img {
+  border-radius: 15px;
+  width: 100%; /* this adjust img size base on parent container*/
+  height: 100%; /* this adjust img size base on parent container*/
+}
+
+.container-white h1 {
+  color: var(--h1-color);
+  font-weight: 400;
+}
+
+.container-white p {
+  color: var(--p-color);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container-text {
+  padding: 0 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
